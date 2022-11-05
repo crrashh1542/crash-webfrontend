@@ -56,16 +56,6 @@ module.exports = {
             chunks: ["index", "main"],
             favicon: "./public/favicon.ico"
         }),
-        new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, "../public/contacts/index.html"),
-            filename: "contacts/index.html",
-            chunks: ["main"],
-        }),
-        new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, "../public/friends/index.html"),
-            filename: "friends/index.html",
-            chunks: ["main", "1"],
-        })
     ],
     mode: 'production',
     devtool: "source-map"
