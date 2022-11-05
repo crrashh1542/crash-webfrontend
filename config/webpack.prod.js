@@ -6,8 +6,7 @@ const path = require('path');
 module.exports = {
     entry: {
         main: './src/main.js',
-        index: './src/index.js',
-        1: './src/1.js' // 1 -> friends
+        index: './src/index.js'
     },
     output: {
         path: path.resolve(__dirname, '../dist'),
